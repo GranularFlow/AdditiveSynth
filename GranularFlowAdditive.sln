@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 17
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GranularFlowAdditive - Standalone Plugin", "GranularFlowAdditive_StandalonePlugin.vcxproj", "{E5BE8BF0-6558-ED36-27D0-8818BCF4FD8B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3978B6BC-9D23-9F44-1763-3C8C666EC75C} = {3978B6BC-9D23-9F44-1763-3C8C666EC75C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GranularFlowAdditive - VST3", "GranularFlowAdditive_VST3.vcxproj", "{B4A51E0C-CF81-AA1F-6267-0A12D2619955}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3978B6BC-9D23-9F44-1763-3C8C666EC75C} = {3978B6BC-9D23-9F44-1763-3C8C666EC75C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GranularFlowAdditive - Shared Code", "GranularFlowAdditive_SharedCode.vcxproj", "{3978B6BC-9D23-9F44-1763-3C8C666EC75C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4A51E0C-CF81-AA1F-6267-0A12D2619955}.Debug|x64.ActiveCfg = Debug|x64
+		{B4A51E0C-CF81-AA1F-6267-0A12D2619955}.Debug|x64.Build.0 = Debug|x64
+		{B4A51E0C-CF81-AA1F-6267-0A12D2619955}.Release|x64.ActiveCfg = Release|x64
+		{B4A51E0C-CF81-AA1F-6267-0A12D2619955}.Release|x64.Build.0 = Release|x64
+		{E5BE8BF0-6558-ED36-27D0-8818BCF4FD8B}.Debug|x64.ActiveCfg = Debug|x64
+		{E5BE8BF0-6558-ED36-27D0-8818BCF4FD8B}.Debug|x64.Build.0 = Debug|x64
+		{E5BE8BF0-6558-ED36-27D0-8818BCF4FD8B}.Release|x64.ActiveCfg = Release|x64
+		{E5BE8BF0-6558-ED36-27D0-8818BCF4FD8B}.Release|x64.Build.0 = Release|x64
+		{3978B6BC-9D23-9F44-1763-3C8C666EC75C}.Debug|x64.ActiveCfg = Debug|x64
+		{3978B6BC-9D23-9F44-1763-3C8C666EC75C}.Debug|x64.Build.0 = Debug|x64
+		{3978B6BC-9D23-9F44-1763-3C8C666EC75C}.Release|x64.ActiveCfg = Release|x64
+		{3978B6BC-9D23-9F44-1763-3C8C666EC75C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="bGA8Pl" name="GranularFlowAdditive" projectType="audioplug"
+              useAppConfig="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="K2fxvN" name="GranularFlowAdditive">
+    <GROUP id="{7E24CBA6-31CA-65A5-FD71-8F1F6C74F07A}" name="Source">
+      <GROUP id="{76D2B371-76C2-AA34-35DA-DED0CF37383E}" name="Utils">
+        <FILE id="KXsET7" name="Utils.cpp" compile="1" resource="0" file="Source/Utils/Utils.cpp"/>
+        <FILE id="NYOLW8" name="Utils.h" compile="0" resource="0" file="Source/Utils/Utils.h"/>
+      </GROUP>
+      <FILE id="RcN9Px" name="Constants.h" compile="0" resource="0" file="Source/Constants.h"/>
+      <GROUP id="{EBFF50FD-3C2B-E880-228C-AD2AD6CF8B36}" name="AdditiveSynth">
+        <GROUP id="{CCFBE2AE-8238-3934-D5B8-FF6E4D8A5B81}" name="AdditiveHarmonic">
+          <GROUP id="{70F31B84-F739-BDE9-BE30-D550651765D2}" name="AdditiveHarmonicSettings">
+            <FILE id="Knmzxi" name="AdditiveHarmonicSettings.cpp" compile="1" resource="0"
+                  file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.cpp"/>
+            <FILE id="V6aVCF" name="AdditiveHarmonicSettings.h" compile="0" resource="0"
+                  file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.h"/>
+          </GROUP>
+          <FILE id="JM19sM" name="AdditiveHarmonic.cpp" compile="1" resource="0"
+                file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.cpp"/>
+          <FILE id="Nz4UcI" name="AdditiveHarmonic.h" compile="0" resource="0"
+                file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.h"/>
+        </GROUP>
+        <GROUP id="{D1DFCBA4-E837-51C4-3F36-6F03C7A60183}" name="AdditiveSynthSettings">
+          <FILE id="ywY1y0" name="AdditiveSynthSettings.cpp" compile="1" resource="0"
+                file="Source/AdditiveSynth/AdditiveSynthSettings/AdditiveSynthSettings.cpp"/>
+          <FILE id="QyOItO" name="AdditiveSynthSettings.h" compile="0" resource="0"
+                file="Source/AdditiveSynth/AdditiveSynthSettings/AdditiveSynthSettings.h"/>
+        </GROUP>
+        <GROUP id="{DB3B8804-1DE5-EA1C-3489-9B109084D273}" name="AdditiveVisualiser">
+          <FILE id="XLn9FE" name="AdditiveVisualiser.cpp" compile="1" resource="0"
+                file="Source/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.cpp"/>
+          <FILE id="OlfPlX" name="AdditiveVisualiser.h" compile="0" resource="0"
+                file="Source/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.h"/>
+        </GROUP>
+        <FILE id="RovS2o" name="AdditiveSynth.cpp" compile="1" resource="0"
+              file="Source/AdditiveSynth/AdditiveSynth.cpp"/>
+        <FILE id="V8Nrak" name="AdditiveSynth.h" compile="0" resource="0" file="Source/AdditiveSynth/AdditiveSynth.h"/>
+      </GROUP>
+      <GROUP id="{0D499682-5669-F976-704F-D76B52219432}" name="CustomSetting">
+        <FILE id="sN0Dnh" name="CustomLook.cpp" compile="1" resource="0" file="Source/CustomSetting/CustomLook.cpp"/>
+        <FILE id="sxZurc" name="CustomLook.h" compile="0" resource="0" file="Source/CustomSetting/CustomLook.h"/>
+        <FILE id="uOMXAL" name="DropDownSelect.cpp" compile="1" resource="0"
+              file="Source/CustomSetting/DropDownSelect.cpp"/>
+        <FILE id="AZOoZ7" name="DropDownSelect.h" compile="0" resource="0"
+              file="Source/CustomSetting/DropDownSelect.h"/>
+        <FILE id="F7EE0H" name="Knob.cpp" compile="1" resource="0" file="Source/CustomSetting/Knob.cpp"/>
+        <FILE id="f0kbgD" name="Knob.h" compile="0" resource="0" file="Source/CustomSetting/Knob.h"/>
+        <FILE id="bnzOws" name="NumberSelect.cpp" compile="1" resource="0"
+              file="Source/CustomSetting/NumberSelect.cpp"/>
+        <FILE id="YXTmQq" name="NumberSelect.h" compile="0" resource="0" file="Source/CustomSetting/NumberSelect.h"/>
+        <FILE id="jffp8l" name="RadioBox.cpp" compile="1" resource="0" file="Source/CustomSetting/RadioBox.cpp"/>
+        <FILE id="Oqhdha" name="RadioBox.h" compile="0" resource="0" file="Source/CustomSetting/RadioBox.h"/>
+        <FILE id="ouyY2G" name="Separator.h" compile="0" resource="0" file="Source/CustomSetting/Separator.h"/>
+      </GROUP>
+      <GROUP id="{CD68E79A-7571-6C79-B89E-87193222D32C}" name="images">
+        <FILE id="COV2o3" name="logo250.png" compile="0" resource="1" file="Source/images/logo250.png"/>
+      </GROUP>
+      <FILE id="yTK0wL" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="t4MZkq" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="bVCOhy" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="WJUdPL" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="./">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="GranularFlowAdditive"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="GranularFlowAdditive"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>

@@ -1,0 +1,32 @@
+Builds
+cmake-build-debug
+.idea/
+# VS files
+/GranularFlowAdditive_SharedCode.vcxproj
+/GranularFlowAdditive_StandalonePlugin.vcxproj.filters
+/GranularFlowAdditive_StandalonePlugin.vcxproj.user
+/GranularFlowAdditive_VST3.vcxproj.filters
+/GranularFlowAdditive_VST3.vcxproj
+/resources.rc
+/GranularFlowAdditive_StandalonePlugin.vcxproj
+/GranularFlowAdditive_SharedCode.vcxproj.filters
+/x64/Debug/Shared Code/
+/x64/Debug/Standalone Plugin/GranularFlowAdditive.exe.recipe
+/x64/Debug/Standalone Plugin/*.tlog
+/x64/Debug/Standalone Plugin/GranularFlowAdditive.ilk
+/x64/Debug/Standalone Plugin/GranularFlowAdditive.pdb
+/x64/Debug/Standalone Plugin/GranularFlowAdditive_StandalonePlugin.vcxproj.FileListAbsolute.txt
+/x64/Debug/Standalone Plugin/include_juce_audio_plugin_client_Standalone.obj
+/x64/Debug/Standalone Plugin/resources.res
+/.vs/
+/x64/Debug/VST3/*.tlog/
+/x64/Debug/VST3/GranularFlowAdditive.exp
+/x64/Debug/VST3/GranularFlowAdditive.lib
+/x64/Debug/VST3/GranularFlowAdditive.pdb
+/x64/Debug/VST3/GranularFlowAdditive.vst3.recipe
+/x64/Debug/VST3/GranularFlowAdditive_VST3.log
+/x64/Debug/VST3/GranularFlowAdditive.ilk
+/x64/Debug/VST3/GranularFlowAdditive_VST3.vcxproj.FileListAbsolute.txt
+/x64/Debug/VST3/include_juce_audio_plugin_client_VST3.obj
+/x64/Debug/VST3/resources.res
+/JuceLibraryCode/
