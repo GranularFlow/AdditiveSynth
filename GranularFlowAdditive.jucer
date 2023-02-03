@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="bGA8Pl" name="GranularFlowAdditive" projectType="audioplug"
-              useAppConfig="0" displaySplashScreen="1" jucerFormatVersion="1">
+              useAppConfig="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginCharacteristicsValue="pluginWantsMidiIn">
   <MAINGROUP id="K2fxvN" name="GranularFlowAdditive">
     <GROUP id="{7E24CBA6-31CA-65A5-FD71-8F1F6C74F07A}" name="Source">
       <GROUP id="{76D2B371-76C2-AA34-35DA-DED0CF37383E}" name="Utils">
