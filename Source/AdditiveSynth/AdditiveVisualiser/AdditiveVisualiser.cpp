@@ -10,60 +10,13 @@
 
 #include "AdditiveVisualiser.h"
 
-AdditiveVisualiser::AdditiveVisualiser()
+AdditiveVisualiser::AdditiveVisualiser():AudioVisualiserComponent (2)
 {
+    setBufferSize(256);
+    setSamplesPerBlock(25);
+    setColours(C_DARK, L_GRAY);
 }
 
 AdditiveVisualiser::~AdditiveVisualiser()
 {
-}
-
-void AdditiveVisualiser::paint(Graphics& g) {
-    // Draw outlines
-    g.setColour(L_GRAY);
-    g.drawLine(0, 0, getWidth(), 0, 2.0);
-    g.drawLine(0, getHeight(), getWidth(), getHeight(), 2.0);
-
-    // Draw samples
-    if (waveformSet) {
-        g.setColour(C_WHITE);
-
-        int sampleCount = waveForm.size();
-        float yOffset = (float)getHeight() / (float)2;
-        int step = std::ceil((float)sampleCount / (float)getWidth());
-        int index = 0;
-
-        Path p;
-        p.startNewSubPath(0, yOffset);
-
-        for (int i = 0; i < sampleCount; i += step) {
-            float y = yOffset + (yOffset * (-waveForm[i])); // 0 ; 200
-            if (y > 200 || y < 0)
-            {
-                y = yOffset;
-            }
-            p.lineTo(index, y);
-            //g.drawLine(index, y, index, yOffset, 2.0f); // Draw from peak to middle
-            index++;
-            if (i + step > sampleCount) {
-                break;
-            }
-        }
-        g.strokePath(p, PathStrokeType(PathStrokeType::curved), AffineTransform::identity);
-
-    }
-}
-void AdditiveVisualiser::setWaveForm(AudioBuffer<float>&audioBuffer) {
-
-    waveForm.clear();
-
-    const float* leftChannel = audioBuffer.getReadPointer(0);
-    const float* rightChannel = audioBuffer.getReadPointer(1);
-
-    for (int i = 0; i < audioBuffer.getNumSamples(); ++i) {
-        waveForm.add(leftChannel[i] > rightChannel[i] ? leftChannel[i] : rightChannel[i]);
-    }
-
-    waveformSet = true;
-    repaint();
 }

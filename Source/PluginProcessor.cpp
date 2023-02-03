@@ -29,6 +29,22 @@ GranularFlowAdditiveAudioProcessor::~GranularFlowAdditiveAudioProcessor()
 }
 
 //==============================================================================
+
+void GranularFlowAdditiveAudioProcessor::prepareToPlay(double sampleRate, int samplesPerBlock)
+{
+    additiveSynth.prepareToPlay(sampleRate, samplesPerBlock);
+}
+
+void GranularFlowAdditiveAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
+{
+    buffer.clear();
+
+    additiveSynth.getNextBlock(buffer, midiMessages);
+}
+
+//==============================================================================
+
+
 const juce::String GranularFlowAdditiveAudioProcessor::getName() const
 {
     return JucePlugin_Name;
@@ -91,12 +107,6 @@ void GranularFlowAdditiveAudioProcessor::changeProgramName (int index, const juc
 }
 
 //==============================================================================
-void GranularFlowAdditiveAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
-{
-    // Use this method as the place to do any pre-playback
-    // initialisation that you need..
-    additiveSynth.prepareToPlay(sampleRate, samplesPerBlock);
-}
 
 void GranularFlowAdditiveAudioProcessor::releaseResources()
 {
@@ -129,13 +139,6 @@ bool GranularFlowAdditiveAudioProcessor::isBusesLayoutSupported (const BusesLayo
   #endif
 }
 #endif
-
-void GranularFlowAdditiveAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
-{
-    buffer.clear();
-
-    additiveSynth.getNextBlock(buffer);
-}
 
 //==============================================================================
 bool GranularFlowAdditiveAudioProcessor::hasEditor() const

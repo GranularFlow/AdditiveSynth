@@ -14,6 +14,7 @@ AdditiveSynth::AdditiveSynth()
 {
     initGui();
     addListeners();
+    addNewHarmonic();
 }
 
 AdditiveSynth::~AdditiveSynth()
@@ -50,12 +51,10 @@ void AdditiveSynth::resized()
     // Harmonics
     for (int i = 0; i < additiveHarmonics.size(); i++)
     {
-        additiveHarmonics[i]->setBounds(getLocalBounds().withTrimmedTop(topSettingsHeight));
+        additiveHarmonics[i]->setBounds(getLocalBounds().withTrimmedTop(topSettingsHeight + ((getHeight()- topSettingsHeight) * 2/3)));
     }
-
     // AudioVisualiser
-    additiveVisualiser.setBounds(getLocalBounds().withTrimmedTop(topSettingsHeight));
-
+    additiveVisualiser.setBounds(getLocalBounds().withTrimmedTop(topSettingsHeight).withTrimmedBottom((getHeight() - topSettingsHeight) * 1/3));
 }
 
 void AdditiveSynth::sliderValueChanged(Slider* slider)
@@ -128,13 +127,24 @@ void AdditiveSynth::selectHarmonic(int harmonicNumber)
     additiveHarmonics[harmonicNumber - 1]->toFront(true);
 }
 
-void AdditiveSynth::getNextBlock(AudioBuffer<float>&)
+void AdditiveSynth::getNextBlock(AudioBuffer<float>& bufferToFill, juce::MidiBuffer& midiMessages)
 {
+   
+    bufferToFill.clear();
+    for (AdditiveHarmonic* harmonic : additiveHarmonics)
+    {
+        harmonic->fillNextBuffer(bufferToFill, midiMessages);
+    }
+    additiveVisualiser.pushBuffer(bufferToFill);
 }
 
 void AdditiveSynth::prepareToPlay(double sampleRateIn, int bufferSize)
 {
+    additiveVisualiser.clear();
     sampleRate = (int)sampleRateIn;
     bufferSize = bufferSize;
-
+    for (AdditiveHarmonic* harmonic: additiveHarmonics)
+    {
+        harmonic->setSampleRate(sampleRate);
+    }
 }

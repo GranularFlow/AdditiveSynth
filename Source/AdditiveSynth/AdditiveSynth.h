@@ -37,7 +37,7 @@ public:
     void selectHarmonic(int);
 
     // Getters
-    void getNextBlock(AudioBuffer<float>&);
+    void getNextBlock(AudioBuffer<float>&, juce::MidiBuffer&);
     // Setters
     void prepareToPlay(double, int);
 private:

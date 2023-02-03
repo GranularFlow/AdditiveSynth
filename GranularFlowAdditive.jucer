@@ -10,16 +10,16 @@
       </GROUP>
       <FILE id="RcN9Px" name="Constants.h" compile="0" resource="0" file="Source/Constants.h"/>
       <GROUP id="{EBFF50FD-3C2B-E880-228C-AD2AD6CF8B36}" name="AdditiveSynth">
-        <GROUP id="{CCFBE2AE-8238-3934-D5B8-FF6E4D8A5B81}" name="AdditiveHarmonic">
-          <GROUP id="{70F31B84-F739-BDE9-BE30-D550651765D2}" name="AdditiveHarmonicSettings">
-            <FILE id="Knmzxi" name="AdditiveHarmonicSettings.cpp" compile="1" resource="0"
+        <GROUP id="{4DDEAC91-6CF2-F442-EA84-00213A56362C}" name="AdditiveHarmonic">
+          <GROUP id="{25AF5A68-C099-F39C-2AC8-9C1766478B46}" name="AdditiveHarmonicSettings">
+            <FILE id="qW4SRx" name="AdditiveHarmonicSettings.cpp" compile="1" resource="0"
                   file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.cpp"/>
-            <FILE id="V6aVCF" name="AdditiveHarmonicSettings.h" compile="0" resource="0"
+            <FILE id="iYIdlN" name="AdditiveHarmonicSettings.h" compile="0" resource="0"
                   file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.h"/>
           </GROUP>
-          <FILE id="JM19sM" name="AdditiveHarmonic.cpp" compile="1" resource="0"
+          <FILE id="xgp9In" name="AdditiveHarmonic.cpp" compile="1" resource="0"
                 file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.cpp"/>
-          <FILE id="Nz4UcI" name="AdditiveHarmonic.h" compile="0" resource="0"
+          <FILE id="xrTOEM" name="AdditiveHarmonic.h" compile="0" resource="0"
                 file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.h"/>
         </GROUP>
         <GROUP id="{D1DFCBA4-E837-51C4-3F36-6F03C7A60183}" name="AdditiveSynthSettings">
@@ -29,9 +29,9 @@
                 file="Source/AdditiveSynth/AdditiveSynthSettings/AdditiveSynthSettings.h"/>
         </GROUP>
         <GROUP id="{DB3B8804-1DE5-EA1C-3489-9B109084D273}" name="AdditiveVisualiser">
-          <FILE id="XLn9FE" name="AdditiveVisualiser.cpp" compile="1" resource="0"
+          <FILE id="kVc5f6" name="AdditiveVisualiser.cpp" compile="1" resource="0"
                 file="Source/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.cpp"/>
-          <FILE id="OlfPlX" name="AdditiveVisualiser.h" compile="0" resource="0"
+          <FILE id="mZO2w8" name="AdditiveVisualiser.h" compile="0" resource="0"
                 file="Source/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.h"/>
         </GROUP>
         <FILE id="RovS2o" name="AdditiveSynth.cpp" compile="1" resource="0"

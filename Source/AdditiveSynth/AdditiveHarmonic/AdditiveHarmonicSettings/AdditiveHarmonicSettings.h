@@ -20,6 +20,12 @@ class AdditiveHarmonicSettings : public Component
 {
 public:
 
+    static enum MidiMode
+    {
+        OFF,
+        ON
+    };
+
     // Class
 	AdditiveHarmonicSettings();
 	~AdditiveHarmonicSettings();
@@ -33,16 +39,22 @@ public:
     float getFreq();
     float getVolume();
     float getPan(int8);
+    bool isCurrentMidiMode(AdditiveHarmonicSettings::MidiMode);
+
+    // Harmonics
+    RadioBox midiModeRadioBox{ "MIDI", C_SUNFLOWER, MIDI_MODE };
+    Knob phaseKnob{ "PHASE", L_AQUA, 0, 360, 1, 0 }; // %
+    Knob freqKnob{ "FREQUENCY", L_ORANGE, 10, 1000, 1, 440 }; // %
+    // Master
+    Knob volumeKnob{ "VOLUME", C_SUNFLOWER, 0, 100, 1, 50 }; // %
+    Knob panKnob{ "PAN", C_BILLS, 0, 100, 1, 50 }; // %
+
 
 private:
     // GUI
     Colour guiColour;
     OwnedArray<Separator> separators;
     // Play style
-    // Harmonics
-    Knob phaseKnob{ "PHASE", L_AQUA, 0, 100, 1, 50 }; // %
-    Knob freqKnob{ "FREQUENCY", L_ORANGE, 0, 100, 1, 50 }; // %
-    // Master
-    Knob volumeKnob{ "VOLUME", C_SUNFLOWER, 0, 100, 1, 50 }; // %
-    Knob panKnob{ "PAN", C_BILLS, 0, 100, 1, 50 }; // %
+
+
 };

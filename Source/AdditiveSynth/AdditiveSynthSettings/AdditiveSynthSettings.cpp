@@ -44,6 +44,5 @@ void AdditiveSynthSettings::resized()
     Utils::addToFb(&fb, harmonicCount, 0, 100, getHeight());
 
     Utils::addToFb(&fb, harmonicSelect, 1, 100, getHeight());
-    DBG("perform" << getLocalBounds().getWidth());
     fb.performLayout(getLocalBounds().withTrimmedLeft(250));    
 }

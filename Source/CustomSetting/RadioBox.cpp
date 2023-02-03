@@ -52,6 +52,7 @@ void RadioBox::buttonStateChanged(Button* button)
     }
     const MessageManagerLock mmLock;
     repaint();
+
 }
 
 void RadioBox::buttonClicked(Button* button){}

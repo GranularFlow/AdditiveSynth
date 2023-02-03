@@ -30,6 +30,7 @@ void AdditiveHarmonicSettings::initGui()
     }
 
     // Settings
+    addAndMakeVisible(midiModeRadioBox);
     addAndMakeVisible(phaseKnob);
     addAndMakeVisible(freqKnob);
 
@@ -57,36 +58,19 @@ void AdditiveHarmonicSettings::resized()
             FlexBox::AlignItems::flexStart,
             FlexBox::JustifyContent::spaceAround
     };
-    // First column    
-    FlexBox tmpFB = fb;
-    tmpFB.flexWrap = FlexBox::Wrap::wrap;
-    tmpFB.alignItems = FlexBox::AlignItems::center;
-    tmpFB.justifyContent = FlexBox::JustifyContent::center;
-    // Second column
-    FlexBox tmpFB2 = tmpFB;
-    tmpFB2.flexDirection = FlexBox::Direction::column;
-
 
     // Second column
     int tmp_height = sectionHeight;
-    int tmp_width = sectionWidth / 2;
-    tmpFB.items.add(FlexItem(phaseKnob).withOrder(1).withMinWidth(tmp_width).withMinHeight(tmp_height));
-    tmpFB.items.add(FlexItem(freqKnob).withOrder(2).withMinWidth(tmp_width).withMinHeight(tmp_height));
-    //tmpFB2.items.add(FlexItem(cursorPositionKnob).withOrder(5).withMinWidth(tmp_width).withMinHeight(tmp_height));
-    // Add column to final flex box  
-    fb.items.add(FlexItem(tmpFB2).withOrder(3).withMinWidth(sectionWidth).withHeight(sectionHeight));
-
-    // Third column
-    tmp_height = sectionHeight / 2;
-    tmp_width = 100;
-    tmpFB2.items.add(FlexItem(volumeKnob).withOrder(1).withMinWidth(tmp_width).withHeight(tmp_height));
-    tmpFB2.items.add(FlexItem(panKnob).withOrder(2).withMinWidth(tmp_width).withHeight(tmp_height));
-    // Add column to final flex box
-    fb.items.add(FlexItem(tmpFB2).withOrder(5).withMinWidth(sectionWidth).withHeight(sectionHeight));
+    int tmp_width = 100;
+    fb.items.add(FlexItem(midiModeRadioBox).withOrder(1).withMinWidth(tmp_width).withMinHeight(tmp_height));
+    fb.items.add(FlexItem(phaseKnob).withOrder(3).withMinWidth(tmp_width).withMinHeight(tmp_height));
+    fb.items.add(FlexItem(freqKnob).withOrder(5).withMinWidth(tmp_width).withMinHeight(tmp_height));
+    fb.items.add(FlexItem(volumeKnob).withOrder(7).withMinWidth(tmp_width).withHeight(tmp_height));
+    fb.items.add(FlexItem(panKnob).withOrder(9).withMinWidth(tmp_width).withHeight(tmp_height));
 
 
     // White lines
-    for (int8 i = 0; i < 3; i++)
+    for (int8 i = 0; i < 4; i++)
     {
         fb.items.add(FlexItem(*separators[i]).withMinWidth(1).withHeight(sectionHeight).withOrder((i + 1) * 2));
     }
@@ -102,6 +86,7 @@ float AdditiveHarmonicSettings::getPhase()
 
 float AdditiveHarmonicSettings::getFreq()
 {
+    DBG("F");
     return freqKnob.getValue();
 }
 
@@ -113,4 +98,9 @@ float AdditiveHarmonicSettings::getVolume()
 float AdditiveHarmonicSettings::getPan(int8 channel)
 {
     return  1 - abs(channel - ((float)panKnob.getValue() / 100));
+}
+
+bool AdditiveHarmonicSettings::isCurrentMidiMode(AdditiveHarmonicSettings::MidiMode mode)
+{
+    return ((AdditiveHarmonicSettings::MidiMode)midiModeRadioBox.getValue() == mode);
 }
