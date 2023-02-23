@@ -10,7 +10,7 @@
 
 #pragma once
 #include <JuceHeader.h>
-#include "../Constants.h"
+#include "Constants.h"
 
 
 class Utils
@@ -18,6 +18,9 @@ class Utils
 public:
 	Utils();
 	~Utils();
+    // GUI
+    static void paintLogo(Graphics&);
+    // Tools
     static float percentToFloat(int8);
     static float samplesToPercent(int,int);
     static int msToSamples(float, int);

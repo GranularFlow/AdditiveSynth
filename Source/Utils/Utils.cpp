@@ -8,7 +8,7 @@
   ==============================================================================
 */
 
-#include "./Utils.h"
+#include "Utils.h"
 
 
 Utils::Utils()
@@ -17,6 +17,12 @@ Utils::Utils()
 
 Utils::~Utils()
 {
+}
+
+void Utils::paintLogo(Graphics& g)
+{
+    const Image logo = ImageFileFormat::loadFrom(BinaryData::logo250_png, BinaryData::logo250_pngSize);
+    g.drawImageAt(logo, (50 - 36) / 2, 7, false);
 }
 
 int Utils::msToSamples(float timeInMs, int sampleRate) {

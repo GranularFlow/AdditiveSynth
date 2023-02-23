@@ -9,7 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include "Constants.h"
+#include "Utils/Constants.h"
 #include "PluginProcessor.h"
 
 //==============================================================================

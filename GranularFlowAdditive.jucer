@@ -5,66 +5,70 @@
               pluginCharacteristicsValue="pluginWantsMidiIn">
   <MAINGROUP id="K2fxvN" name="GranularFlowAdditive">
     <GROUP id="{7E24CBA6-31CA-65A5-FD71-8F1F6C74F07A}" name="Source">
-      <GROUP id="{76D2B371-76C2-AA34-35DA-DED0CF37383E}" name="Utils">
-        <FILE id="KXsET7" name="Utils.cpp" compile="1" resource="0" file="Source/Utils/Utils.cpp"/>
-        <FILE id="NYOLW8" name="Utils.h" compile="0" resource="0" file="Source/Utils/Utils.h"/>
+      <GROUP id="{477A2D7A-0D79-CE20-CE3E-447D3F498758}" name="CustomComponents">
+        <GROUP id="{7E0066F7-BDEB-8172-A804-9FE043852E6F}" name="CustomLooks">
+          <FILE id="Ab1O5T" name="CustomLook.cpp" compile="1" resource="0" file="Source/CustomComponents/CustomLooks/CustomLook.cpp"/>
+          <FILE id="AR0bwh" name="CustomLook.h" compile="0" resource="0" file="Source/CustomComponents/CustomLooks/CustomLook.h"/>
+          <FILE id="LptmVB" name="Knob.cpp" compile="1" resource="0" file="Source/CustomComponents/CustomLooks/Knob.cpp"/>
+          <FILE id="LilXGE" name="Knob.h" compile="0" resource="0" file="Source/CustomComponents/CustomLooks/Knob.h"/>
+          <FILE id="BKGFl8" name="NumberSelect.cpp" compile="1" resource="0"
+                file="Source/CustomComponents/CustomLooks/NumberSelect.cpp"/>
+          <FILE id="Sotow5" name="NumberSelect.h" compile="0" resource="0" file="Source/CustomComponents/CustomLooks/NumberSelect.h"/>
+          <FILE id="fMQvwT" name="RadioBox.cpp" compile="1" resource="0" file="Source/CustomComponents/CustomLooks/RadioBox.cpp"/>
+          <FILE id="ooXwh5" name="RadioBox.h" compile="0" resource="0" file="Source/CustomComponents/CustomLooks/RadioBox.h"/>
+          <FILE id="XcrlBo" name="Separator.h" compile="0" resource="0" file="Source/CustomComponents/CustomLooks/Separator.h"/>
+        </GROUP>
+        <GROUP id="{97C26BC5-B790-726C-6B88-A89F80C89FCF}" name="Images">
+          <FILE id="b1I3HW" name="logo250.png" compile="0" resource="1" file="Source/CustomComponents/Images/logo250.png"/>
+        </GROUP>
       </GROUP>
-      <FILE id="RcN9Px" name="Constants.h" compile="0" resource="0" file="Source/Constants.h"/>
-      <GROUP id="{EBFF50FD-3C2B-E880-228C-AD2AD6CF8B36}" name="AdditiveSynth">
-        <GROUP id="{4DDEAC91-6CF2-F442-EA84-00213A56362C}" name="AdditiveHarmonic">
-          <GROUP id="{25AF5A68-C099-F39C-2AC8-9C1766478B46}" name="AdditiveHarmonicSettings">
-            <FILE id="qW4SRx" name="AdditiveHarmonicSettings.cpp" compile="1" resource="0"
-                  file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.cpp"/>
-            <FILE id="iYIdlN" name="AdditiveHarmonicSettings.h" compile="0" resource="0"
-                  file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.h"/>
+      <GROUP id="{B8D1E6C3-DE46-5B41-D383-70698B3CE323}" name="Synths">
+        <GROUP id="{9E9B6BD2-23C0-4BDE-4C42-E9E523ABAC57}" name="AdditiveSynth">
+          <GROUP id="{0F604520-4232-4C3A-28AC-69932E35F5A3}" name="AdditiveHarmonic">
+            <GROUP id="{A6C1E643-DA83-D8ED-6DE6-05EAB18EDBE8}" name="AdditiveHarmonicSettings">
+              <FILE id="KHrKWi" name="AdditiveHarmonicSettings.cpp" compile="1" resource="0"
+                    file="Source/Synths/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.cpp"/>
+              <FILE id="CYfx23" name="AdditiveHarmonicSettings.h" compile="0" resource="0"
+                    file="Source/Synths/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonicSettings/AdditiveHarmonicSettings.h"/>
+            </GROUP>
+            <FILE id="s2TpgV" name="AdditiveHarmonic.cpp" compile="1" resource="0"
+                  file="Source/Synths/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.cpp"/>
+            <FILE id="DJPjv0" name="AdditiveHarmonic.h" compile="0" resource="0"
+                  file="Source/Synths/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.h"/>
           </GROUP>
-          <FILE id="xgp9In" name="AdditiveHarmonic.cpp" compile="1" resource="0"
-                file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.cpp"/>
-          <FILE id="xrTOEM" name="AdditiveHarmonic.h" compile="0" resource="0"
-                file="Source/AdditiveSynth/AdditiveHarmonic/AdditiveHarmonic.h"/>
+          <GROUP id="{79630830-FFF5-841F-A83E-BAA527475CCD}" name="AdditiveSynthSettings">
+            <FILE id="eUysoY" name="AdditiveSynthSettings.cpp" compile="1" resource="0"
+                  file="Source/Synths/AdditiveSynth/AdditiveSynthSettings/AdditiveSynthSettings.cpp"/>
+            <FILE id="adaGu3" name="AdditiveSynthSettings.h" compile="0" resource="0"
+                  file="Source/Synths/AdditiveSynth/AdditiveSynthSettings/AdditiveSynthSettings.h"/>
+          </GROUP>
+          <GROUP id="{20FC6426-6A2D-CEFB-FABC-F7392EF330A5}" name="AdditiveVisualiser">
+            <FILE id="ESnrdI" name="AdditiveVisualiser.cpp" compile="1" resource="0"
+                  file="Source/Synths/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.cpp"/>
+            <FILE id="clUizn" name="AdditiveVisualiser.h" compile="0" resource="0"
+                  file="Source/Synths/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.h"/>
+          </GROUP>
+          <FILE id="SZxSzh" name="AdditiveSynth.cpp" compile="1" resource="0"
+                file="Source/Synths/AdditiveSynth/AdditiveSynth.cpp"/>
+          <FILE id="vkOs1p" name="AdditiveSynth.h" compile="0" resource="0" file="Source/Synths/AdditiveSynth/AdditiveSynth.h"/>
         </GROUP>
-        <GROUP id="{D1DFCBA4-E837-51C4-3F36-6F03C7A60183}" name="AdditiveSynthSettings">
-          <FILE id="ywY1y0" name="AdditiveSynthSettings.cpp" compile="1" resource="0"
-                file="Source/AdditiveSynth/AdditiveSynthSettings/AdditiveSynthSettings.cpp"/>
-          <FILE id="QyOItO" name="AdditiveSynthSettings.h" compile="0" resource="0"
-                file="Source/AdditiveSynth/AdditiveSynthSettings/AdditiveSynthSettings.h"/>
+      </GROUP>
+      <GROUP id="{8F7F6C3E-DCE4-F5E8-2E94-A7C630810870}" name="Utils">
+        <GROUP id="{F792EFCC-2DD4-519D-9829-632DD09A0605}" name="AudioLoad">
+          <FILE id="T525rk" name="AudioLoad.cpp" compile="1" resource="0" file="Source/Utils/AudioLoad/AudioLoad.cpp"/>
+          <FILE id="FOpb6f" name="AudioLoad.h" compile="0" resource="0" file="Source/Utils/AudioLoad/AudioLoad.h"/>
         </GROUP>
-        <GROUP id="{DB3B8804-1DE5-EA1C-3489-9B109084D273}" name="AdditiveVisualiser">
-          <FILE id="kVc5f6" name="AdditiveVisualiser.cpp" compile="1" resource="0"
-                file="Source/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.cpp"/>
-          <FILE id="mZO2w8" name="AdditiveVisualiser.h" compile="0" resource="0"
-                file="Source/AdditiveSynth/AdditiveVisualiser/AdditiveVisualiser.h"/>
-        </GROUP>
-        <FILE id="RovS2o" name="AdditiveSynth.cpp" compile="1" resource="0"
-              file="Source/AdditiveSynth/AdditiveSynth.cpp"/>
-        <FILE id="V8Nrak" name="AdditiveSynth.h" compile="0" resource="0" file="Source/AdditiveSynth/AdditiveSynth.h"/>
+        <FILE id="H0ayEY" name="Constants.h" compile="0" resource="0" file="Source/Utils/Constants.h"/>
+        <FILE id="IlO8lV" name="Utils.cpp" compile="1" resource="0" file="Source/Utils/Utils.cpp"/>
+        <FILE id="ozK7k8" name="Utils.h" compile="0" resource="0" file="Source/Utils/Utils.h"/>
       </GROUP>
-      <GROUP id="{0D499682-5669-F976-704F-D76B52219432}" name="CustomSetting">
-        <FILE id="sN0Dnh" name="CustomLook.cpp" compile="1" resource="0" file="Source/CustomSetting/CustomLook.cpp"/>
-        <FILE id="sxZurc" name="CustomLook.h" compile="0" resource="0" file="Source/CustomSetting/CustomLook.h"/>
-        <FILE id="uOMXAL" name="DropDownSelect.cpp" compile="1" resource="0"
-              file="Source/CustomSetting/DropDownSelect.cpp"/>
-        <FILE id="AZOoZ7" name="DropDownSelect.h" compile="0" resource="0"
-              file="Source/CustomSetting/DropDownSelect.h"/>
-        <FILE id="F7EE0H" name="Knob.cpp" compile="1" resource="0" file="Source/CustomSetting/Knob.cpp"/>
-        <FILE id="f0kbgD" name="Knob.h" compile="0" resource="0" file="Source/CustomSetting/Knob.h"/>
-        <FILE id="bnzOws" name="NumberSelect.cpp" compile="1" resource="0"
-              file="Source/CustomSetting/NumberSelect.cpp"/>
-        <FILE id="YXTmQq" name="NumberSelect.h" compile="0" resource="0" file="Source/CustomSetting/NumberSelect.h"/>
-        <FILE id="jffp8l" name="RadioBox.cpp" compile="1" resource="0" file="Source/CustomSetting/RadioBox.cpp"/>
-        <FILE id="Oqhdha" name="RadioBox.h" compile="0" resource="0" file="Source/CustomSetting/RadioBox.h"/>
-        <FILE id="ouyY2G" name="Separator.h" compile="0" resource="0" file="Source/CustomSetting/Separator.h"/>
-      </GROUP>
-      <GROUP id="{CD68E79A-7571-6C79-B89E-87193222D32C}" name="images">
-        <FILE id="COV2o3" name="logo250.png" compile="0" resource="1" file="Source/images/logo250.png"/>
-      </GROUP>
-      <FILE id="yTK0wL" name="PluginProcessor.cpp" compile="1" resource="0"
-            file="Source/PluginProcessor.cpp"/>
-      <FILE id="t4MZkq" name="PluginProcessor.h" compile="0" resource="0"
-            file="Source/PluginProcessor.h"/>
-      <FILE id="bVCOhy" name="PluginEditor.cpp" compile="1" resource="0"
+      <FILE id="c45m71" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
-      <FILE id="WJUdPL" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="jPiVzs" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="aKun2Z" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="CRNQeX" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>

@@ -9,7 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include "AdditiveSynth/AdditiveSynth.h"
+#include "Synths/AdditiveSynth/AdditiveSynth.h"
 
 //==============================================================================
 /**
